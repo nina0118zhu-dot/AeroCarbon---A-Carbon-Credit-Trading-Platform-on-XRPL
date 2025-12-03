@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XRPL CarbonConnect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              xrpl: {
+                blue: '#23292f',
+                accent: '#00FC9B', // Neon green for eco/crypto vibe
+                dark: '#0f1114',
+                card: '#1a1d21',
+                text: '#e2e8f0',
+                muted: '#94a3b8'
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #0f1114;
+        color: #e2e8f0;
+      }
+      /* Custom scrollbar for webkit */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1a1d21; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #334155; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #475569; 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.1",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react-dom": "https://aistudiocdn.com/react-dom@^19.2.0",
+    "jspdf": "https://esm.sh/jspdf@2.5.1",
+    "qrcode": "https://esm.sh/qrcode@1.5.3",
+    "jsqr": "https://esm.sh/jsqr@1.4.0"
+  }
+}
+</script>
+<!-- Add xrpl.js for real Testnet connectivity -->
+<script src="https://unpkg.com/xrpl@2.14.0/build/xrpl-latest-min.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
